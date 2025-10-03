@@ -10,16 +10,33 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="font-sans">
-      <Navbar />
-      <Hero />
-      <TechMarquee />
-      <Services />
-      <ROICalculator />
-      <HowItWorks />
-      <WhyChooseUs />
-      <CTASection />
-      <Footer />
-    </div>
+    <>
+      {/* Skip to main content link for accessibility */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-teal-600 focus:text-white focus:rounded-lg focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
+      
+      <div className="font-sans">
+        <Navbar />
+        
+        <main id="main-content" role="main">
+          <Hero />
+          <TechMarquee />
+          
+          <article>
+            <Services />
+            <ROICalculator />
+            <HowItWorks />
+            <WhyChooseUs />
+            <CTASection />
+          </article>
+        </main>
+        
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -1,0 +1,30 @@
+{
+  "name": "Elyvate AI - Enterprise AI Solutions",
+  "short_name": "Elyvate AI",
+  "description": "Transform your business with AI-powered chatbots, voice agents and custom automation solutions. Reduce costs by 95% and scale your operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00999c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/elyvate-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/elyvate-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "artificial-intelligence"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
+

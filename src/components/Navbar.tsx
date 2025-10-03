@@ -26,6 +26,8 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'py-3' : 'py-6'
       }`}
+      role="navigation"
+      aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div
@@ -37,11 +39,17 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-6 py-4">
             {/* Logo */}
-            <a href="#" className="flex items-center space-x-3 group">
+            <a 
+              href="#" 
+              className="flex items-center space-x-3 group"
+              aria-label="Elyvate AI Homepage"
+            >
               <img 
                 src="/elyvate-logo.png" 
-                alt="Elyvate AI" 
+                alt="Elyvate AI Logo" 
                 className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
+                width="40"
+                height="40"
               />
               <span className="text-2xl font-bold" style={{ color: '#0e2a54' }}>
                 ELYVATE <span className="text-teal-600">AI</span>
@@ -49,7 +57,7 @@ export default function Navbar() {
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8" role="menubar">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -58,9 +66,11 @@ export default function Navbar() {
                   style={{ color: '#0e2a54' }}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#00999c'}
                   onMouseLeave={(e) => e.currentTarget.style.color = '#0e2a54'}
+                  role="menuitem"
+                  aria-label={`Navigate to ${link.name} section`}
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{ backgroundColor: '#00999c' }}></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{ backgroundColor: '#00999c' }} aria-hidden="true"></span>
                 </a>
               ))}
             </div>
@@ -73,6 +83,7 @@ export default function Navbar() {
                 style={{ background: 'linear-gradient(135deg, #00999c 0%, #00b8bc 100%)', boxShadow: '0 4px 6px -1px rgba(0, 153, 156, 0.3)' }}
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 153, 156, 0.5)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 153, 156, 0.3)'}
+                aria-label="Claim your free AI audit"
               >
                 Claim Free Audit
               </a>
@@ -85,12 +96,16 @@ export default function Navbar() {
                 const menu = document.getElementById('mobile-menu');
                 menu?.classList.toggle('hidden');
               }}
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
             >
               <svg
                 className="w-6 h-6 text-gray-700"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -103,7 +118,12 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu */}
-          <div id="mobile-menu" className="hidden md:hidden border-t border-gray-200">
+          <div 
+            id="mobile-menu" 
+            className="hidden md:hidden border-t border-gray-200"
+            role="menu"
+            aria-label="Mobile navigation menu"
+          >
             <div className="px-6 py-4 space-y-3">
               {navLinks.map((link) => (
                 <a
@@ -117,6 +137,8 @@ export default function Navbar() {
                     const menu = document.getElementById('mobile-menu');
                     menu?.classList.add('hidden');
                   }}
+                  role="menuitem"
+                  aria-label={`Navigate to ${link.name} section`}
                 >
                   {link.name}
                 </a>
@@ -125,6 +147,8 @@ export default function Navbar() {
                 href="#contact"
                 className="block text-center px-6 py-2.5 rounded-xl text-white font-semibold hover:shadow-lg transition-all duration-300"
                 style={{ background: 'linear-gradient(135deg, #00999c 0%, #00b8bc 100%)' }}
+                role="menuitem"
+                aria-label="Claim your free AI audit"
               >
                 Claim Free Audit
               </a>

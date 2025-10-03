@@ -74,7 +74,7 @@ export default function Navbar() {
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 153, 156, 0.5)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 153, 156, 0.3)'}
               >
-                Get Started
+                Claim Free Audit
               </a>
             </div>
 
@@ -126,7 +126,7 @@ export default function Navbar() {
                 className="block text-center px-6 py-2.5 rounded-xl text-white font-semibold hover:shadow-lg transition-all duration-300"
                 style={{ background: 'linear-gradient(135deg, #00999c 0%, #00b8bc 100%)' }}
               >
-                Get Started
+                Claim Free Audit
               </a>
             </div>
           </div>

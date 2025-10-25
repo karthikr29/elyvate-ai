@@ -11,8 +11,12 @@ const nextConfig: NextConfig = {
       },
     ],
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 31536000, // 1 year
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   
   // Compiler options
@@ -29,7 +33,14 @@ const nextConfig: NextConfig = {
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ['react-type-animation'],
+    optimizeCss: true,
   },
+  
+  // Power mode for faster builds
+  poweredByHeader: false,
+  
+  // Reduce bundle size
+  swcMinify: true,
   
   // Headers for security and caching
   async headers() {

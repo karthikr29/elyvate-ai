@@ -110,9 +110,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Preconnect to external domains for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload critical assets */}
+        <link rel="preload" href="/elyvate-logo.png" as="image" type="image/png" />
+        <link rel="preload" href="/logo/1.png" as="image" type="image/png" fetchPriority="high" />
         
         {/* Additional SEO meta tags */}
         <meta name="theme-color" content="#00999c" />

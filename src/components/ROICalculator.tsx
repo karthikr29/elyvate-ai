@@ -44,8 +44,8 @@ export default function ROICalculator() {
 
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           {/* Input Controls */}
-          <div className="space-y-6">
-            <div className="p-10 rounded-2xl bg-white shadow-xl border border-gray-200 h-full flex flex-col">
+          <div className="space-y-6" style={{ animation: 'slideInLeft 0.7s ease-out' }}>
+            <div className="p-10 rounded-2xl bg-white shadow-xl border border-gray-200 h-full flex flex-col hover:shadow-2xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold mb-12" style={{ color: '#0e2a54' }}>Your Current Metrics</h3>
               
               <div className="space-y-12 flex-1 flex flex-col justify-between">
@@ -116,9 +116,9 @@ export default function ROICalculator() {
           </div>
 
           {/* Results Display */}
-          <div className="space-y-6 h-full flex flex-col">
+          <div className="space-y-6 h-full flex flex-col" style={{ animation: 'slideInRight 0.7s ease-out' }}>
             {/* Main Savings Card */}
-            <div className="p-10 rounded-2xl text-white shadow-2xl flex-1 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #00999c 0%, #00b8bc 100%)' }}>
+            <div className="p-10 rounded-2xl text-white shadow-2xl flex-1 flex items-center justify-center hover:scale-105 transition-all duration-300" style={{ background: 'linear-gradient(135deg, #00999c 0%, #00b8bc 100%)' }}>
               <div className="text-center">
                 <p className="text-xl opacity-90 mb-4">Your Estimated Annual Savings</p>
                 <div className="text-6xl md:text-7xl font-bold">
@@ -129,7 +129,7 @@ export default function ROICalculator() {
 
             {/* Breakdown Cards */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200">
+              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.2s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Hours Automated</div>
                 <div className="text-3xl font-bold gradient-text">
                   {hoursAutomated.toLocaleString()}
@@ -137,7 +137,7 @@ export default function ROICalculator() {
                 <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>per year</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200">
+              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.3s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Staff Equivalent</div>
                 <div className="text-3xl font-bold gradient-text">
                   {staffEquivalent}
@@ -145,13 +145,13 @@ export default function ROICalculator() {
                 <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>FTE saved</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200">
+              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.4s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Automation Rate</div>
                 <div className="text-3xl font-bold gradient-text">70%</div>
                 <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>of workload</div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200">
+              <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.5s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Current Cost</div>
                 <div className="text-3xl font-bold gradient-text">{formatCurrency(currentAnnualCost)}</div>
                 <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>annually</div>

@@ -304,9 +304,11 @@ export default function Hero() {
                   2000,
                 ]}
                 wrapper="span"
-                speed={50}
+                speed={60}
                 className="gradient-text"
                 repeat={Infinity}
+                cursor={true}
+                preRenderFirstString={true}
               />
             </h1>
             
@@ -366,9 +368,12 @@ export default function Hero() {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 700px"
                     className="object-contain p-8"
                     priority={index === 0}
+                    quality={85}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                    fetchPriority={index === 0 ? 'high' : 'low'}
                   />
                 </div>
               ))}

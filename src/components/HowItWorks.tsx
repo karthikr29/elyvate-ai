@@ -125,7 +125,7 @@ export default function HowItWorks() {
               </div>
               <div className="text-left">
                 <p className="text-sm font-semibold" style={{ color: '#0e2a5499' }}>Ready to get started?</p>
-                <p className="text-2xl font-bold" style={{ color: '#0e2a54' }}>Let's build something amazing</p>
+                <p className="text-2xl font-bold" style={{ color: '#0e2a54' }}>Let&apos;s build something amazing</p>
               </div>
             </div>
             <a href="#contact"

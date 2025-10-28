@@ -37,14 +37,14 @@ export default function CTASection() {
                 </div>
                 
                 <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
-                  We'll Find the Money Leaks in Your Business. You Keep the Savings.
+                  We&apos;ll Find the Money Leaks in Your Business. You Keep the Savings.
                 </h2>
                 
                 <p className="text-xl text-white/90 leading-relaxed mb-4">
                   Book a free consultation <span className="relative inline-block">
                     <span className="font-semibold">(usually £1,000)</span>
                     <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-white/50"></span>
-                  </span> and we'll analyze your workflows, support, sales, operations and data to pinpoint exactly where AI can eliminate waste. No commitment, just honest numbers.
+                  </span> and we&apos;ll analyze your workflows, support, sales, operations and data to pinpoint exactly where AI can eliminate waste. No commitment, just honest numbers.
                 </p>
               </div>
 

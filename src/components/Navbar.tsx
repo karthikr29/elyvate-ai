@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,12 +45,13 @@ export default function Navbar() {
               className="flex items-center space-x-3 group"
               aria-label="Elyvate AI Homepage"
             >
-              <img 
+              <Image 
                 src="/elyvate-logo.png" 
                 alt="Elyvate AI Logo" 
                 className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
-                width="40"
-                height="40"
+                width={40}
+                height={40}
+                priority
               />
               <span className="text-2xl font-bold" style={{ color: '#0e2a54' }}>
                 ELYVATE <span className="text-teal-600">AI</span>

@@ -33,7 +33,6 @@ const nextConfig: NextConfig = {
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ['react-type-animation'],
-    optimizeCss: true,
   },
   
   // Power mode for faster builds

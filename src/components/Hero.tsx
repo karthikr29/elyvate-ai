@@ -53,7 +53,7 @@ export default function Hero() {
     }, 4000);
     
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-6" style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2f1 50%, #f8fafc 100%)' }}>
@@ -94,6 +94,7 @@ export default function Hero() {
                   y2={`${toNode.y}%`}
                   stroke="url(#lineGradient)"
                   strokeWidth={strokeWidth}
+                  strokeOpacity={opacity}
                   filter="url(#glow)"
                   style={{
                     animation: `pulseConnection ${3 + (i % 3)}s ease-in-out infinite`,

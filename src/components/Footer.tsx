@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 py-16 px-6">
@@ -7,10 +9,12 @@ export default function Footer() {
         {/* Company Info - Right Aligned */}
         <div className="text-right mb-12">
           <div className="flex items-center justify-end space-x-3 mb-4">
-            <img 
+            <Image 
               src="/elyvate-logo.png" 
               alt="Elyvate AI" 
               className="h-10 w-auto"
+              width={40}
+              height={40}
             />
             <h3 className="text-3xl font-bold" style={{ color: '#0e2a54' }}>
               ELYVATE <span className="text-teal-600">AI</span>

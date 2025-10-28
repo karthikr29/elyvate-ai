@@ -117,7 +117,7 @@ export default function Services() {
             AI Solutions for Every <br className="hidden md:block" /><span className="gradient-text">Business Need</span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600">
-            From automation to insights, we've got you covered with cutting-edge AI technology
+            From automation to insights, we&apos;ve got you covered with cutting-edge AI technology
           </p>
         </div>
 

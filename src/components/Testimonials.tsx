@@ -57,7 +57,7 @@ export default function Testimonials() {
 
               {/* Quote */}
               <p className="mb-6 leading-relaxed text-lg" style={{ color: '#0e2a54' }}>
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </p>
 
               {/* Author Info */}

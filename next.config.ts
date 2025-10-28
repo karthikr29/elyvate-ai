@@ -39,9 +39,6 @@ const nextConfig: NextConfig = {
   // Power mode for faster builds
   poweredByHeader: false,
   
-  // Reduce bundle size
-  swcMinify: true,
-  
   // Headers for security and caching
   async headers() {
     return [

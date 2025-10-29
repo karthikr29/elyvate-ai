@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Elyvate AI - Enterprise AI Solutions That Drive Real Results",
     template: "%s | Elyvate AI"
   },
-  description: "Transform your business with AI-powered chatbots, voice agents and custom automation solutions. Reduce costs by 95% and scale your operations with 24/7 intelligent agents. Free AI audit worth £1,000.",
+  description: "Transform your business with AI-powered chatbots, voice agents and custom automation solutions. Reduce costs by 75% and scale your operations with 24/7 intelligent agents. Free AI audit worth £1,000.",
   keywords: [
     "AI solutions",
     "AI chatbots",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     url: 'https://elyvate-ai.com',
     siteName: 'Elyvate AI',
     title: 'Elyvate AI - Enterprise AI Solutions That Drive Real Results',
-    description: 'Transform your business with AI-powered chatbots, voice agents and custom automation solutions. Reduce costs by 95% and scale your operations with 24/7 intelligent agents.',
+    description: 'Transform your business with AI-powered chatbots, voice agents and custom automation solutions. Reduce costs by 75% and scale your operations with 24/7 intelligent agents.',
     images: [
       {
         url: '/elyvate-logo.png',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Elyvate AI - Enterprise AI Solutions That Drive Real Results',
-    description: 'Transform your business with AI-powered chatbots, voice agents and custom automation. Reduce costs by 95%. Free £1,000 AI audit available.',
+    description: 'Transform your business with AI-powered chatbots, voice agents and custom automation. Reduce costs by 75%. Free £1,000 AI audit available.',
     images: ['/elyvate-logo.png'],
     creator: '@elyvateai',
   },

@@ -51,7 +51,7 @@ export default function CTASection() {
               {/* Quick Stats Inline */}
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { value: "95%", label: "Savings" },
+                  { value: "75%", label: "Savings" },
                   { value: "2-4", label: "Weeks" },
                   { value: "24/7", label: "Support" }
                 ].map((stat, i) => (

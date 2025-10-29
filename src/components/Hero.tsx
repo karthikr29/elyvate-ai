@@ -314,7 +314,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl lg:text-2xl mb-8" style={{ color: '#0e2a5499' }}>
-              Enterprise AI solutions that drive real results. Automate workflows, reduce costs by 95%, 
+              Enterprise AI solutions that drive real results. Automate workflows, reduce costs by 75%, 
               and scale your operations with intelligent agents.
             </p>
 
@@ -341,11 +341,11 @@ export default function Hero() {
             {/* Stats Ticker */}
             <div className="flex flex-wrap gap-8">
               <div className="animate-pulse-glow">
-                <div className="text-3xl md:text-4xl font-bold gradient-text">500K+</div>
+                <div className="text-3xl md:text-4xl font-bold gradient-text">5K+</div>
                 <div className="text-sm mt-1" style={{ color: '#0e2a5499' }}>Hours Saved</div>
               </div>
               <div className="animate-pulse-glow" style={{ animationDelay: '0.2s' }}>
-                <div className="text-3xl md:text-4xl font-bold gradient-text">95%</div>
+                <div className="text-3xl md:text-4xl font-bold gradient-text">75%</div>
                 <div className="text-sm mt-1" style={{ color: '#0e2a5499' }}>Cost Reduction</div>
               </div>
               <div className="animate-pulse-glow" style={{ animationDelay: '0.4s' }}>

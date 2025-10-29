@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           description: "Get your AI solutions up and running with minimal disruption to your operations"
         },
         {
-          metric: "95%",
+          metric: "70%",
           label: "Automation Rate",
           description: "Achieve industry-leading automation with our battle-tested AI models"
         },
@@ -160,11 +160,11 @@ export default function WhyChooseUs() {
           }}>
           <div className="grid md:grid-cols-4 gap-8 relative z-10">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">200+</div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">10+</div>
               <p className="text-sm font-semibold" style={{ color: '#0e2a5499' }}>Enterprise Clients</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">50M+</div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">100K+</div>
               <p className="text-sm font-semibold" style={{ color: '#0e2a5499' }}>AI Interactions</p>
             </div>
             <div className="text-center">

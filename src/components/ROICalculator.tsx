@@ -134,7 +134,7 @@ export default function ROICalculator() {
                 <div className="text-3xl font-bold gradient-text">
                   {hoursAutomated.toLocaleString()}
                 </div>
-                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>per year</div>
+                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>Per Year</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.3s both' }}>
@@ -142,19 +142,19 @@ export default function ROICalculator() {
                 <div className="text-3xl font-bold gradient-text">
                   {staffEquivalent}
                 </div>
-                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>FTE saved</div>
+                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>FTE Saved</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.4s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Automation Rate</div>
                 <div className="text-3xl font-bold gradient-text">70%</div>
-                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>of workload</div>
+                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>of Workload</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ animation: 'slideInRight 0.6s ease-out 0.5s both' }}>
                 <div className="text-sm mb-1" style={{ color: '#0e2a5499' }}>Current Cost</div>
                 <div className="text-3xl font-bold gradient-text">{formatCurrency(currentAnnualCost)}</div>
-                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>annually</div>
+                <div className="text-xs mt-1" style={{ color: '#0e2a5466' }}>Annually</div>
               </div>
             </div>
           </div>

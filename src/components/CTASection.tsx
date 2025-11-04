@@ -65,7 +65,7 @@ export default function CTASection() {
               {/* CTA Button */}
               <div>
                 <a 
-                  href="https://cal.com/vish-jivan-odt9rb"
+                  href="https://cal.com/vish-jivan-odt9rb/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-full sm:w-auto px-10 py-5 rounded-2xl bg-white font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"

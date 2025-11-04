@@ -64,8 +64,11 @@ export default function CTASection() {
 
               {/* CTA Button */}
               <div>
-                <button 
-                  className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-white font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+                <a 
+                  href="https://cal.com/vish-jivan-odt9rb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full sm:w-auto px-10 py-5 rounded-2xl bg-white font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
                   style={{ color: '#00999c' }}
                 >
                   <span className="flex items-center justify-center gap-3">
@@ -74,7 +77,7 @@ export default function CTASection() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </span>
-                </button>
+                </a>
                 <p className="text-sm text-white/70 mt-4">✓ No credit card required  •  ✓ 30-min consultation  •  ✓ Instant calendar booking</p>
               </div>
             </div>

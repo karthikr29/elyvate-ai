@@ -94,9 +94,9 @@ export default function Hero() {
                   y2={`${toNode.y}%`}
                   stroke="url(#lineGradient)"
                   strokeWidth={strokeWidth}
-                  strokeOpacity={opacity}
                   filter="url(#glow)"
                   style={{
+                    strokeOpacity: opacity,
                     animation: `pulseConnection ${3 + (i % 3)}s ease-in-out infinite`,
                     animationDelay: `${i * 0.2}s`
                   }}
